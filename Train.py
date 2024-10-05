@@ -10,8 +10,8 @@ import seaborn as sns
 train_datagen = ImageDataGenerator(rescale=1./255, shear_range=0.2, zoom_range=0.2, horizontal_flip=True)
 test_datagen = ImageDataGenerator(rescale=1./255)
 
-x_train = train_datagen.flow_from_directory("C:/Users/vicky/OneDrive/Documents/Image based Heartbeat classification for Arrhythmia Detection Using CNN/data/train", target_size=(64, 64), batch_size=32, class_mode="categorical")
-x_test = test_datagen.flow_from_directory("C:/Users/vicky/OneDrive/Documents/Image based Heartbeat classification for Arrhythmia Detection Using CNN/data/test", target_size=(64, 64), batch_size=32, class_mode="categorical")
+x_train = train_datagen.flow_from_directory("C:/Users/shres/Downloads/Project/Arrhythmia Detection/data/test", target_size=(64, 64), batch_size=32, class_mode="categorical")
+x_test = test_datagen.flow_from_directory("C:/Users/shres/Downloads/Project/Arrhythmia Detection/data/test", target_size=(64, 64), batch_size=32, class_mode="categorical")
 
 # Model building
 model = Sequential()
