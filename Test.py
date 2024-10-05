@@ -10,7 +10,7 @@ model = tf.keras.models.load_model('ECG.h5')
 
 # Define the test data generator
 test_datagen = ImageDataGenerator(rescale=1./255)
-x_test = test_datagen.flow_from_directory("C:/Users/vicky/OneDrive/Documents/Image based Heartbeat classification for Arrhythmia Detection Using CNN/data/test", target_size=(64, 64), batch_size=32, class_mode="categorical", shuffle=False)
+x_test = test_datagen.flow_from_directory("C:/Users/shres/Downloads/Project/Arrhythmia Detection/data/test", target_size=(64, 64), batch_size=32, class_mode="categorical", shuffle=False)
 
 
 # Generate predictions for the test set
